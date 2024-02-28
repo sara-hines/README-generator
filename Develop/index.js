@@ -4,7 +4,7 @@ let inquirer = require('inquirer');
 let generateMarkdown = require('../Develop/generateMarkdown.js');
 
 
-// We will pass the below questions to inquirer's prompt method to prompt the user for their responses.
+// The below questions will be passed to inquirer's prompt method to prompt the user for their responses.
 const questions = [
     {
         type: "input",
@@ -39,9 +39,9 @@ const questions = [
         message: "6. Please enter the usage information for your README's Usage section."
     }, 
     {
-        type: "input",
-        name: "contributing",
-        message: "7. Please enter guidelines for contributing to your project for your README's Contributing section." 
+        type: "input", 
+        name: "features", 
+        message: "7. Please enter a description of features for your README's Features section."
     }, 
     {
         type: "input", 
@@ -49,32 +49,42 @@ const questions = [
         message: "8. Please enter test instructions for your README's Tests section."
     }, 
     {
+        type: "input",
+        name: "contributing",
+        message: "9. Please enter guidelines for contributing to your project for your README's Contributing section." 
+    }, 
+    {
+        type: "input", 
+        name: "credits", 
+        message: "10. Please provide any credits or acknowledgements for your README's Credits section."
+    }, 
+    {
         type: "input", 
         name: "github", 
-        message: "9. Please provide your GitHub username."
+        message: "11. Please provide your GitHub username."
     }, 
     {
         type: "input", 
         name: "email", 
-        message: "10. Please provide your email address."
+        message: "12. Please provide your email address."
     }
 ];
 
 
-// The init() function calls inquirer's prompt method and makes use of the user's answers.
+// The init() function calls inquirer's prompt method and helps handle the creation of the README.
 function init() {
     inquirer
         .prompt(questions)
         // In the answers object, the name for each question in the original questions array will be the key, and the user's response to that particular question will be the value of that key. 
         .then((answers) => {
-            // The content exported from generateMarkdown.js was the generateMarkdown function, and we used generateMarkdown as the variable storing the function from generateMarkdown.js, so we can use generateMarkdown as a function here and pass it the answers object. 
+            // The content exported from generateMarkdown.js is the generateMarkdown function, and generateMarkdown is the name of the variable storing the function from generateMarkdown.js, so we can use generateMarkdown as a function here and pass it the answers object. 
             let template = generateMarkdown(answers);
-            // Now that we have the user's answers stored in the variable template, we can pass the writeToFile function the name of the file to be written to (generated-README.md), as well as the content to be written (template).
+            // Now that the user's answers are stored in the variable template, we can pass the writeToFile function the name of the file to be written to (generated-README.md), as well as the content to be written (template).
             writeToFile("generated-README.md", template);
         })
         // .catch will catch any errors from .prompt or .then. 
         .catch((error) => {
-            // If the error is a Tty error related to the environment the user is running the program in, a specific error will be thrown
+            // If the error is a Tty error related to the environment the user is running the program in, a specific error will be thrown.
             if (error.isTtyError) {
             throw new Error(`Prompt couldn't be rendered in current environment`);
             } else {
@@ -93,7 +103,7 @@ function writeToFile(fileName, data) {
 }
 
 
-// Function call to initialize app
+// Function call to initialize app.
 init();
 
 
