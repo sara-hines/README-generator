@@ -59,7 +59,6 @@ function renderLicenseSection(license) {
 
 // Function generateMarkdown incorporates the return values of function renderLicenseBadge, function renderLicenseLink, and function renderLicenseSection, as well as the user's input on other README components from the answers object, and returns the content for the customized README.
 function generateMarkdown(answers) {
-  console.log(answers);
   // The renderLicenseBadge function needs to receive the license and the licenseColor, so I passed in answers rather than answers.license.
   let licenseBadge = renderLicenseBadge(answers);
   // The renderlicenseLink function only needs to receive the license from the answers object, so I passed answers.license to the function.
