@@ -1,8 +1,0 @@
-![screenshot12](https://github.com/sara-hines/README-generator/assets/90005274/a34e9ce4-f9a8-4f31-9f6b-c628c5f4164b)
-![screenshot13](https://github.com/sara-hines/README-generator/assets/90005274/dce21ba5-9977-49e2-a244-356b54cd025e)
-![screenshot14](https://github.com/sara-hines/README-generator/assets/90005274/03e22378-ffae-4e96-bb37-a29cbcd6dd63)
-![screenshot15](https://github.com/sara-hines/README-generator/assets/90005274/bd728076-4941-40e1-8038-ee8ed068244b)
-![screenshot16](https://github.com/sara-hines/README-generator/assets/90005274/093d8ed6-b978-400f-ac89-8fd6776c752c)
-![screenshot17](https://github.com/sara-hines/README-generator/assets/90005274/b5f86f27-177f-4430-9237-1f7269491a28)
-![screenshot18](https://github.com/sara-hines/README-generator/assets/90005274/cb30c328-683d-483e-a8c1-2af80974ad42)
-![screenshot19](https://github.com/sara-hines/README-generator/assets/90005274/9654fe66-aa24-496e-967a-eabb3c4f4914)
