@@ -77,6 +77,7 @@ function init() {
         .prompt(questions)
         // In the answers object, the name for each question in the original questions array will be the key, and the user's response to that particular question will be the value of that key. 
         .then((answers) => {
+            console.log(answers);
             // The content exported from generateMarkdown.js is the generateMarkdown function, and generateMarkdown is the name of the variable storing the function from generateMarkdown.js, so we can use generateMarkdown as a function here and pass it the answers object. 
             let template = generateMarkdown(answers);
             // Now that the user's answers are stored in the variable template, we can pass the writeToFile function the name of the file to be written to (generated-README.md), as well as the content to be written (template).

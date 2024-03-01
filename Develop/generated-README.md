@@ -26,11 +26,11 @@ This Work Day Planner app uses local storage, jQuery, Day.js, Bootstrap, and of 
 
 ## Installation
 
-No installation is required to use this application. 
+No installation is required to use this application.
 
 ## Usage
 
-When the user navigates to the application at https://sara-hines.github.io/work-day-planner, they will see a calendar with the title "Work Day Planner," the current date displayed under the subheading "A simple calendar app for scheduling your work day," and a work day calendar with one section (or, time block, as it will be referred to going forward) for each of the hours from 9am through 5pm. To enter and save an event, click inside the time block for the hour of the event, type the text for the event, and click the blue save button to the right of the time block. The event will persist in local storage so that the user can navigate elsewhere in the browser and view their saved events again when returning to the calendar. 
+When the user navigates to the application at https://sara-hines.github.io/work-day-planner, they will see a calendar with the title "Work Day Planner," the current date displayed under the subheading "A simple calendar app for scheduling your work day," and a work day calendar with one section (or, time block, as it will be referred to going forward) for each of the hours from 9am through 5pm. To enter and save an event, click inside the time block for the hour of the event, type the text for the event, and click the blue save button to the right of the time block. The event will persist in local storage so that the user can navigate elsewhere in the browser and view their saved events again when returning to the calendar.
 
 ## Features
 
@@ -38,7 +38,7 @@ To further explain and explore the functionality of this work day planner, the f
 
 ## Tests
 
-No tests have been developed for this application as of yet, but this could be a promising area for future development. If you would like to contribute with writing tests, take a look at the contribution guidelines below, and feel free to dive in. 
+No tests have been developed for this application as of yet, but this could be a promising area for future development. If you would like to contribute with writing tests, take a look at the contribution guidelines below, and feel free to dive in.
 
 ## Contributing
 
