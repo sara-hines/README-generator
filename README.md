@@ -8,7 +8,7 @@ This project is a professional README generator designed to help easily generate
 
 The README generator automatically adds all of the sections generally necessary for a comprehensive, professional README, with a Table of Contents that navigates to the appropriate README section on click. A license badge, a link to view the license, a link to the user's GitHub account, and the entire License and Questions sections are created without requiring writing on the part of the user. Using this README generator, the developer can spend less time on tasks such as creating headings, ordering sections, and creating links, and the time that they do put into the README will likely have more return on investment—writing more detailed Usage and Features Sections, for example. The result is a more robust and professional README than you may have otherwise created, in less time than you may have otherwise invested. 
 
-This is a command-line application which uses Node.js (Node's built-in File System module, and the writeFile() method of the File System module in particular) and the npm package Inquirer to prompt and handle user input. The installation is simple, and the application is accessible and easy to use. The design of the application balances simplicity and brevity while providing enough structure to generate an informative and polished README.  
+This is a command-line application which uses Node.js (Node's built-in File System module, and the writeFile() method of the File System module in particular) and the npm package Inquirer to prompt and handle user input. The installation is simple, and the application is accessible and easy to use. The design of the application balances simplicity and brevity while providing enough structure to generate an informative and polished README. To view an example of a README created using this README generator, navigate to the sample-README.md file in the Assets directory of the repository. You can view a walkthrough video [here](https://drive.google.com/file/d/1IQkTq6y5w5ukY30IOciHytwe7f3MfkAt/view?usp=drive_link) which demonstrates how a user would run the application from the command line and shows the features of the generated README.
 
 ## Table of Contents
 
@@ -40,9 +40,23 @@ This is a command-line application which uses Node.js (Node's built-in File Syst
 
 After running `node index.js` from the command line, when the first prompt appears, "1. What will the title for your README be?", type your response and press enter. The next prompt will be "2. Please choose a license from the following list of options" with a list of the most prevalent licenses as options. Use the arrow keys to navigate downward or upward through the list and hit enter once you have navigated to your chosen option. Continue through the prompts, following the directions to either select from a list of choices or provide the text that will be used in your generated README. If you would like to create a line break and spacing so as to have multiple paragraphs for the same prompt, type `<br/><br/>` between the content that should have a line break. 
 
-After your response to the last question (12. Please provide your email address.), the answers object containing your responses for each prompt will be logged to the console, along with the message "README was generated." To view your newly created README, open the file named generated-README.md in the Develop directory. This file can now be previewed through your preferred markdown previewer or IDE, added to your application repository, or further customized and edited to your preference. To view an example of a README created using this README generator, navigate to the sample-README.md file in the Develop directory of the repository.
+After your response to the last question (12. Please provide your email address.), the answers object containing your responses for each prompt will be logged to the console, along with the message "README was generated." To view your newly created README, open the file named generated-README.md in the Develop directory. This file can now be previewed through your preferred markdown previewer or IDE, added to your application repository, or further customized and edited to your preference. 
 
 ## Features
+
+This command-line application creates a formatted README with the following sections, customized with the user's input and content: 
+
+* Description
+* Installation
+* Usage
+* Features
+* Tests
+* Contributing
+* Credits
+* Questions
+* License
+
+Many READMEs do not contain all of these sections. Ensuring that each section is included helps to provide the neccesary amount of instruction and information for someone unfamiliar to your application to understand your work. Furthermore, the simple inclusion of the Contributing, Credits, and Questions sections helps remind the user to cite sources, thank contributors, and promote future collaboration and connection. For a more detailed walkthrough of this README generator application, follow along with the below screenshots or the walkthrough video available [here](https://drive.google.com/file/d/1IQkTq6y5w5ukY30IOciHytwe7f3MfkAt/view?usp=drive_link). 
 
 After following the installation instructions, type node index.js in your terminal, as in the screenshot below, and hit enter to run the application.
 
@@ -60,21 +74,20 @@ The next prompt will appear, requesting that the user choose a color for the lic
 
 ![screenshot5](https://github.com/sara-hines/README-generator/assets/90005274/b4e346c6-8767-4674-ae65-cb74d7ad7bf4)
 
-The remaining prompts require typed input rather than selection from a list of choices. Refer to the screenshots below to see an example of responses to each prompt. For some sections, you may want to break the text into multiple paragraphs. To do so, type `<br/><br/>` between the text which should be displayed in separate paragraphs. If you would like to include screenshots or images, use the markdown syntax for the screenshot/image wherever you would like it displayed. 
+The remaining prompts all require typed input rather than selection from a list of choices. Refer to the screenshots below to see an example of responses to each prompt. For some sections, you may want to break the text into multiple paragraphs. To do so, type `<br/><br/>` between the text which should be displayed in separate paragraphs. If you would like to include screenshots or images, use the markdown syntax for the screenshot/image wherever you would like it displayed. 
 
-![screenshot6](https://github.com/sara-hines/README-generator/assets/90005274/03796e77-581f-4242-91dc-c7e85c4b9c87)
-
-![screenshot7](https://github.com/sara-hines/README-generator/assets/90005274/35224109-07ba-4557-9eb7-58bddb4d1637)
-
-![screenshot8](https://github.com/sara-hines/README-generator/assets/90005274/00359693-3d1f-4038-a9ac-053e2a39af7e)
+![screenshot6](https://github.com/sara-hines/work-day-planner/assets/90005274/6ae005b4-517a-46bc-ba2f-92e74676ea67)
+![screenshot7](https://github.com/sara-hines/work-day-planner/assets/90005274/f9d049c2-13b3-40ab-b97f-24d76ba37be0)
+![screenshot8](https://github.com/sara-hines/work-day-planner/assets/90005274/b0be29da-b22f-4ef0-8677-c78eecae90c1)
 
 After a response is provided for the last question, "12. Please provide your email address," an object consisting of your responses for each question will be logged to the console. For each question, the key will be a short name helping to identify the question, and the value of that key will be the response you provided for the question. Additionally, the message "README was generated." will be logged to the console, helping to signal that the process is complete and the README has been created. The below screenshots show the object and the "README was generated" message logged to the console when creating the example README, sample-README.md.
 
 ![screenshot9](https://github.com/sara-hines/README-generator/assets/90005274/dbbafa2e-d80f-408a-857a-1938f1627329)
 
 ![screenshot10](https://github.com/sara-hines/README-generator/assets/90005274/c8a9b30f-cbad-4aaf-92b5-df9922e2a175)
+![screenshot11](https://github.com/sara-hines/work-day-planner/assets/90005274/9e9c6311-0921-4283-9018-4417d1815e7e)
 
-![screenshot11](https://github.com/sara-hines/README-generator/assets/90005274/bb747d57-d474-475b-ad17-089ae1909c1a)
+To view the example README and better visualize the products this README generator can create, navigate to the sample-README.md file in the Assets directory. 
 
 ## Tests
 
@@ -82,7 +95,7 @@ There have been no tests developed for this README generator yet. If you have an
 
 ## Contributing
 
-If you would like to contribute to this README generator application, reach out to me at sara.marie.hines1@gmail.com! Any ideas, feedback, and contributions to the codebase are welcome. If you create an issue, please @ me. If you would like to make a pull request, please request a pull request review from me so that I can review your proposed changes. Some features which would be beneficial to implement would be: the ability to accept or reject default content; the option to create additional badges with customized text; and the ability to choose one of 3 markdown templates with different formatting and visual appearance. 
+If you would like to contribute to this README generator application, reach out to me at sara.marie.hines1@gmail.com. Any ideas, feedback, and contributions to the codebase are welcome. If you create an issue, please @ me. If you would like to make a pull request, please request a pull request review from me so that I can review your proposed changes. Some features which would be beneficial to implement would be: the ability to accept or reject default content; the option to create additional badges with customized text; and the ability to choose one of 3 markdown templates with different formatting and visual appearance. 
 
 ## Credits
 

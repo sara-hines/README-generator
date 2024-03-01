@@ -128,4 +128,3 @@ ${licenseSection}`
 
 // The below line exports the function generateMarkdown so that it can be accessed by the index.js file.
 module.exports = generateMarkdown;
-
